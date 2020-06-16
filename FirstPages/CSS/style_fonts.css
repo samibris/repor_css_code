@@ -1,0 +1,189 @@
+/* para los colores usar color pickers en google
+   para las fuentes externas usar google fonts
+*/
+
+
+body{
+	/*background: rgb(205, 250, 245);*/
+	/*background: rgba(205, 250, 245, 0.5);*/
+	background: linear-gradient(to bottom, rgb(205, 250, 245), rgba(205, 250, 245,0));
+	/*background-image: url("https://cdn.pixabay.com/photo/2013/11/28/10/36/road-220058__340.jpg");*/
+	/*background-image: url("../img/emailus.png")*/
+	
+	font-size: 1.15em; /*em is for responsive. it is better for the different size od devices*/
+    /*text-transform: uppercase; /*values: uppercase, lowercase, capitilize*/
+    text-align: justify; /*values: center, left, right, justify*/
+    /*font-family: sans-serif;*/
+    /*font-family: "Arial", sans-serif;
+
+    /*external fonts*/
+    font-family: "Balsamiq Sans",sans-serif; /*toma sans-serif en caso de que internet falle */
+}
+
+#title{
+	color: rgb(102, 22, 145);	
+	font-family: "Press Start 2P", sans-serif;
+
+	/*animation-name: red-to-black;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-delay: -2s;
+	animation-iteration-count: 2;
+	animation-direction: reverse;
+	animation: red-to-black 4s linear 0s infinite alternate-reverse;
+	
+	para los browsers viejos */
+	-webkit-animation: red-to-black 4s linear 0s infinite alternate-reverse;
+	-moz-animation: red-to-black 4s linear 0s infinite alternate-reverse;
+	-ms-animation: red-to-black 4s linear 0s infinite alternate-reverse;
+	-o-animation: red-to-black 4s linear 0s infinite alternate-reverse;
+
+}
+.subtitle{
+	color: rgb(27, 117, 107);
+	font-family: "Press Start 2P", sans-serif;
+}
+
+#service-image{
+		height: 400px;
+		width: 70%;
+		/*background: url("https://cdn.pixabay.com/photo/2013/11/28/10/36/road-220058__340.jpg");
+		opacity: 0.5;
+		background-repeat: no-repeat;
+		background-size: cover;*/
+		background: steelblue;
+		/*linear-gradient
+		/*background: linear-gradient(to right, red, yellow, green, purple);
+		/*background: linear-gradient(to right, rgb(194, 50, 2), rgba(194, 50, 2,0));
+		/*background: linear-gradient(180deg, rgb(194, 50, 2), rgba(194, 50, 2,0));*/
+
+		/*radial-gradient*/
+		/*background: radial-gradient(yellow, blue, red);*/
+		background: radial-gradient(circle, yellow 20%, blue 40%, red 60%);
+
+		/*Borders: size style(=solid, dashed, dotted, double) color*/
+		border: 10px solid rgb(28, 28,79);
+
+		/*float: right;*/ 
+
+}
+
+#google-link{
+	/*Values: none, underline (by deffect), line-through, overline*/
+	text-decoration: none;
+	/*float: right; inline-block, inline*/ 
+}
+
+.italics{
+	font-style: italic; /*value: italic, oblique*/
+}
+
+#about-us-image{
+	height: 250px;
+	width:50%;
+
+	border: 6px solid rgb(28, 28,79);
+	/*padding: 20px; modifica los 4 bordes
+	/*padding: top, right, botton, left
+	padding: 100px 50px 30px 0;
+	/*margin: top botton - left right*/
+    margin: 50px 30px;  	
+	/*margin: 60px;*/
+
+	float: right;
+}
+
+.site-table{
+	/*display:none;*/
+}
+
+.container{
+	background-color: rgb(200, 210, 250);
+	margin:10px;
+	height: 600px;
+
+	display: flex;
+	flex-direction: row;
+	/*flex-wrap: wrap;*/
+	justify-content: center; /*center, flex-end, space-between, space-around*/
+	align-items: center; /*center, flex-end, stretch,baseline*/
+}
+
+.container-item{
+	background: rgb(20, 120, 39);
+	color:white;
+	font-size: 25px;
+	text-align: center;
+
+	width: 70px;
+	line-height: 50px;
+	margin:10px; 
+}
+
+.grid-container{
+	background-color: rgb(250, 250, 255);
+	margin:10px;
+	height: 500px;
+
+	display: grid;
+	grid-template-columns: auto auto auto; 
+	grid-template-rows: auto auto;
+
+	/*justify-content: space-evenly;/*end, start, center, space-evenly, space-around*/
+	/*align-content: end;*/
+
+	/*grid-gap: 300px 150px;*/
+}	
+
+.grid-item{
+	color: blue;
+	font-family: 25px;
+	text-align: center;
+
+	width: 70px;
+	line-height: 40px;
+	margin:10px; 
+
+}
+
+.submit-button{
+	margin:20px 10px;
+	padding: 10px 15px;
+	border:none;
+	text-decoration: none;
+	font-family: "Lato", sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	color: white;
+	background: rgb(89, 150, 255);
+	/*transition: background 0.5s ease-in-out; */
+	/*for all browsers*/
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+
+	/*transform: translate(50px, 30px);*/
+	transform: scale(1.5);
+}
+
+.submit-button:hover {
+	background: rgb(147, 187, 255);
+	padding: 20px 30px;
+}
+
+@keyframes red-to-black { /* si solo se necesitan 2 cambios se usa: from - to en lugar de %*/
+	0%{
+		background: white;
+		transform: translate(0px, 0px);
+	}
+	
+	50%{
+		background: yellow;
+		transform: translate(5px, 5px);
+	}
+	
+	100%{
+		background: black;
+		transform: translate(10px, 10px);
+	}
+}

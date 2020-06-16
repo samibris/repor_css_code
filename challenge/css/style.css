@@ -1,0 +1,122 @@
+/*
+---------------------------
+Author: Sandra Bonilla
+---------------------------
+primary font: font-family: 'PT Sans', sans-serif;;
+secundary font: font-family: 'Ultra', serif;
+
+Colors
+Gray: rgb(232, 230, 230)
+dark gray:  rgb(82, 78, 78);
+white: rgb(255, 255, 255)
+
+Red: rgb(115, 6, 20)
+dark red: rgb(92, 20, 20);
+
+*/
+
+body{
+	background: rgba(232, 230, 230,0.5);
+}
+
+.content{
+	animation-name: fade-in;
+	animation-duration: 2s;
+}
+
+.sidebar{
+	animation-name: fade-in;
+	animation-duration: 2s;
+}
+
+img{
+	width: 400px;
+	height: 200px;
+}
+
+#main{
+	display: grid;
+	grid-template-columns: 70% 30%;
+}
+
+p{
+	font-family: 'PT Sans', sans-serif;
+}
+
+li{
+	font-family: 'PT Sans', sans-serif;
+}
+
+a{
+	font-family: 'PT Sans', sans-serif;
+	color: black;
+}
+
+h1{
+	font-family: 'Ultra', serif;
+	color: rgb(82, 78, 78);
+}
+
+h2{
+	font-family: 'Ultra', serif;
+	color: rgb(82, 78, 78);
+	
+}
+
+.image-grid{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.image-grid > img {
+	margin: 10px;
+}
+
+.image-grid > img:hover{
+	width: 450px;
+	height: 250px;
+	transition: 0.5s all;
+}
+
+#image1{
+	float: right;
+	margin: 15px;
+	height: 300px;
+}
+
+.post{
+	border: 2px solid rgb(28, 1, 1);
+	margin: 10px;
+}
+
+.post-title{
+	margin-left: 5px;
+	color: black;
+}
+
+.post-text{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.sidebar{
+	background:rgb(150, 23, 23);
+}
+
+.post > a{
+	margin-left: 5px;
+	margin-right: 5px;	
+	text-decoration: none;
+	transition: 0.5s color;
+}
+
+.post > a:hover{
+	color: rgb(232, 230, 230);
+}
+
+@keyframes fade-in{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}

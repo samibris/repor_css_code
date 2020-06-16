@@ -1,0 +1,36 @@
+/* para los colores usar color pickers en google*/
+
+body{
+	/*background: rgb(205, 250, 245);*/
+	/*background: rgba(205, 250, 245, 0.5);*/
+	background: linear-gradient(to bottom, rgb(205, 250, 245), rgba(205, 250, 245,0));
+	/*background-image: url("https://cdn.pixabay.com/photo/2013/11/28/10/36/road-220058__340.jpg");*/
+	/*background-image: url("../img/emailus.png")*/
+}
+
+#title{
+	color: rgb(102, 22, 145);	
+}
+.subtitle{
+	color: rgb(27, 117, 107);
+}
+
+#service-image{
+		height: 400px;
+		width: 70%;
+		/*background: url("https://cdn.pixabay.com/photo/2013/11/28/10/36/road-220058__340.jpg");
+		opacity: 0.5;
+		background-repeat: no-repeat;
+		background-size: cover;*/
+		background: steelblue;
+		/*linear-gradient
+		/*background: linear-gradient(to right, red, yellow, green, purple);
+		/*background: linear-gradient(to right, rgb(194, 50, 2), rgba(194, 50, 2,0));
+		/*background: linear-gradient(180deg, rgb(194, 50, 2), rgba(194, 50, 2,0));*/
+
+		/*radial-gradient*/
+		/*background: radial-gradient(yellow, blue, red);*/
+		background: radial-gradient(circle, yellow 20%, blue 40%, red 60%);
+
+
+}

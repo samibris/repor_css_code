@@ -1,0 +1,87 @@
+/*the difference between class and id is that classes are meant to be used more than once, id only once*/
+/*body{
+	background: lightblue;
+
+}
+
+.title{
+	color:blue;
+}
+
+.subtitle{
+	color:red;
+}
+*/
+
+/*Define an id*/
+#contact-us{
+	color:blue;
+}
+/*Define an element*/
+h4{
+	color:red;
+}
+h4:hover{
+	color:purple;
+}
+
+/*Define a class*/
+.headoff{
+	color:green;
+}
+
+/*
+#google-link:link{
+	color:yellow;
+}
+
+#google-link:visited{
+	color:red;
+}*/
+
+
+/* every tag anchor tag that follows an h4*/
+h4 + a {
+	color:blue;
+}
+
+/* every button tag that is after a text area but they are in the same parent*/
+textarea ~ button{
+	color:green;
+
+}
+ /*Every single li inside a ul (direct child)*/
+ ul > li{
+ 	color:yellow;
+ }
+
+/*Every single li inside a ul (all children)*/
+ ul li{
+ 	color:purple;
+ }
+
+/*change h2 with class "bigtitle"*/
+ h2[class=bigtitle]{
+ 	color: purple;
+ }
+
+/* when several classes separate by white space*/
+h2[class~=backg]{
+ 	background: purple;
+ }
+
+/*images contain in anywhere the src value "../img/"
+img[src*="../img/"]{*/
+
+/*images with the src ends with "../img/"
+img[src$="../img/"]{*/
+
+/*images with the src starts with "../img/"*/
+img[src^="../img/"]{
+	border:50px solid blue;
+}
+
+/*change classes that are called schedule + dash + something, for example schedule, schedule-1, schedule-2*/
+p[class|=schedule]{
+	background-color:yellow;
+}
